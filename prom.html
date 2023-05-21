@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Hoja de Vida</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mi Hoja de Vida</h1>
+      <nav>
+        <ul>
+          <li><a href="#perfil">Perfil</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <h3>Miguel Angel Gozme Lazo</h3>
+      <div id="perfil-contenido">
+        <img src="./imagen.png">
+          <p>¡Hola! Soy Miguel, un apasionado por el desarrollo web y la tecnología. Mi objetivo es aprovechar mis habilidades y conocimientos para contribuir a proyectos desafiantes y crear soluciones innovadoras.</p>
+          <ul>
+            <li><strong>Edad:</strong> 25 años</li>
+            <li><strong>Ubicación:</strong> Satipo - junin, Perú</li>
+            <li><strong>Idiomas:</strong> Español (nativo)</li>
+            <li><strong>Email:</strong> miguel.angel@correo.com</li>
+            <li><strong>Teléfono:</strong> +51 123456789</li>
+          </ul>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia Laboral</h2>
+      <div id="experiencia-contenido">
+        <div class="experiencia-item">
+          <h3>Desarrollador Web en XYZ Company</h3>
+          <p class="experiencia-detalles"><strong>Fecha:</strong> Enero 2018 - Presente</p>
+          <p class="experiencia-detalles"><strong>Descripción:</strong> Como desarrollador web en XYZ Company, fui responsable del desarrollo y mantenimiento de sitios web para clientes. Trabajé en estrecha colaboración con el equipo de diseño y los clientes para crear soluciones atractivas y funcionales. Utilicé tecnologías como HTML, CSS, JavaScript y frameworks como Bootstrap.</p>
+        </div>
+        <div class="experiencia-item">
+          <h3>Programador Java en ABC Corporation</h3>
+          <p class="experiencia-detalles"><strong>Fecha:</strong> Enero 2022 - Diciembre 2022</p>
+          <p class="experiencia-detalles"><strong>Descripción:</strong> En ABC Corporation, trabajé como programador Java en el equipo de desarrollo de software. Participé en el diseño e implementación de aplicaciones empresariales utilizando tecnologías como Java, Spring, Hibernate y bases de datos SQL. Colaboré estrechamente con el equipo de QA para realizar pruebas y asegurar la calidad del software.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="educacion">
+      <h2>Educación</h2>
+      <div id="educacion-contenido">
+        <div class="educacion-item">
+          <h3>Estudiante de Ign. de Software - SENATI</h3>
+          <p class="educacion-detalles"><strong>Fecha:</strong> Julio 2022 - hasta la fecha </p>
+          <p class="educacion-detalles"><strong>Descripción:</strong> En SENATI, estoy aprendiendo el desarrollo de paginas web y uso de java. Durante mi formación, adquirí conocimientos en programación, bases de datos, diseño web y desarrollo de aplicaciones empresariales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul id="habilidades-lista">
+        <li>Desarrollo web (HTML, CSS, JavaScript)</li>
+        <li>Programación en Java</li>
+        <li>Bases de datos SQL</li>
+        <li>Gestión de proyectos</li>
+        <li>Resolución de problemas</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div id="proyectos-contenido">
+        <div class="proyecto-item">
+          <h3>Sitio web corporativo para XYZ Company</h3>
+          <p class="proyecto-detalles"><strong>Tecnologías utilizadas:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+          <p class="proyecto-detalles"><strong>Descripción:</strong> Desarrollé un sitio web corporativo para XYZ Company, que incluía información sobre la empresa, sus servicios y un formulario de contacto. Utilicé tecnologías web modernas y un diseño responsivo para garantizar una experiencia óptima en todos los dispositivos.</p>
+        </div>
+        <div class="proyecto-item">
+          <h3>Aplicación de gestión de tareas</h3>
+          <p class="proyecto-detalles"><strong>Tecnologías utilizadas:</strong> Java, Spring Boot, MySQL</p>
+          <p class="proyecto-detalles"><strong>Descripción:</strong> Desarrollé una aplicación web de gestión de tareas utilizando Java y el framework Spring Boot. La aplicación permitía a los usuarios crear, organizar y realizar un seguimiento de sus tareas diarias. También se implementó un sistema de autenticación y roles de usuario.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="ubicacion">
+      <h2>Ubicación</h2>
+      <div id="mapa"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7827.420223516239!2d-74.66441641365793!3d-11.20907090586861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910bc6cbbcdf2b1d%3A0xcd1c4a47b69415a0!2sR%C3%ADo%20Negro%2012876!5e0!3m2!1ses-419!2spe!4v1684625885347!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+  </div>
+</body>
+</html>
